@@ -1,5 +1,5 @@
-<script>
-  let coins = [
+<script lang="ts">
+  let coins: { slug: string; symbol: string }[] = [
     {
       slug: 'bitcoin',
       symbol: 'BTC',
