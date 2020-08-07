@@ -1,11 +1,14 @@
 <script>
-  import { Router } from '@sveltech/routify';
+  import { Router, prefetch } from '@sveltech/routify';
   import { routes } from '@sveltech/routify/tmp/routes';
+
+  routes
+    .map(route => route.api)
+    .filter(node => node.meta.iWantTheseFetched) //optional filtering
+    .forEach(node => prefetch(node.path));
 </script>
 
 <style global>
-  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&display=swap');
-
   @import 'tailwindcss/base';
 
   @import 'tailwindcss/components';

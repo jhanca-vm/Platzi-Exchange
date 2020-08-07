@@ -3,11 +3,12 @@
 Sitio web para consultar información relacionada con criptomonedas.
 ![](https://static.platzi.com/media/landing-projects/proyecto-vue-js-profesional.png)
 
-### Frameworks utilizados:
+### Frameworks y Lenguajes utilizados:
 
 - Svelte js
-- Sapper
+- Routify
 - Tailwind CSS
+- Typescript
 
 ## Inicializando el proyecto:
 

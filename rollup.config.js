@@ -45,7 +45,9 @@ export default {
         css.write('public/build/bundle.css');
       },
       preprocess: sveltePreprocess({
-        postcss: true,
+        postcss: {
+          plugins: [require('tailwindcss'), require('autoprefixer')],
+        },
       }),
     }),
     routify({
