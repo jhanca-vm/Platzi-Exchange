@@ -19,7 +19,7 @@
   ];
 </script>
 
-<section class="text-gray-800 my-4 sm:flex sm:items-center">
+<section class="text-gray-800 my-4 sm:mt-0 sm:flex sm:items-center">
   <div class="flex flex-col items-center sm:w-1/2">
     <img
       class="w-20 h-20"

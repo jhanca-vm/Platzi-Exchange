@@ -1,7 +1,7 @@
 export function getCoinHistory(coin: string): Promise<any> {
   const now: Date = new Date();
   const end: number = now.getTime();
-  now.setDate(now.getDate() - 1);
+  now.setHours(now.getHours() - 6);
   const start: number = now.getTime();
 
   return fetch(
